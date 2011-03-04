@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+  <ListPreference android:summary="How often the queue screen is refreshed" android:key="queue_refresh" android:title="Queue Refresh Interval" android:defaultValue="1000" android:entryValues="@array/interval_values" android:entries="@array/interval_names"></ListPreference>
+<ListPreference android:entries="@array/interval_names" android:key="history_refresh" android:entryValues="@array/interval_values" android:title="History Refresh Interval" android:defaultValue="10000" android:summary="How often the history screen is refreshed"></ListPreference><PreferenceScreen android:title="Server Options" android:key="server_prefs" android:summary="Configure the connection to your SABnzbd server"><EditTextPreference android:dialogMessage="Enter the SABnzbd hostname:" android:key="hostname" android:dialogTitle="Hostname" android:title="Hostname" android:summary="Host the server is running at"></EditTextPreference><EditTextPreference android:dialogTitle="Port" android:key="port" android:title="Port" android:dialogMessage="Enter the port number:" android:summary="The port to connect on"></EditTextPreference><EditTextPreference android:dialogTitle="API Key" android:key="apikey" android:title="API Key" android:dialogMessage="Enter the API key:" android:summary="The key to access this server"></EditTextPreference><CheckBoxPreference android:title="Connect via HTTPS" android:key="secure" android:summary="Connect to the server securely"></CheckBoxPreference>
+<Preference android:key="server_test" android:title="Test Connection" android:summary="@string/test_connection_summary"></Preference>
+</PreferenceScreen>
+
+    
+    
+    
+</PreferenceScreen>

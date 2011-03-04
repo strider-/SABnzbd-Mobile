@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:gravity="center"
+				android:background="@drawable/background">
+	<TableLayout  android:id="@+id/tableLayout1" 
+				  android:paddingTop="10dip"
+	   			  android:layout_width="wrap_content"
+	   			  android:layout_height="match_parent"
+	   			  android:background="@null">
+	    <TableRow>
+	    	<ImageView android:layout_column="1" 
+	    	android:layout_span="2" 
+	    	android:layout_width="fill_parent" 
+	    	android:src="@drawable/sabnzbd_logo"
+	    	android:id="@+id/imageView1" 
+	    	android:layout_height="35dip" 
+	    	android:layout_gravity="center"
+	    	android:scaleType="fitCenter" />
+	    </TableRow>	
+		<TableRow>
+			<ImageButton android:id="@+id/btnQueue"
+						 android:layout_column="1"
+						 android:paddingTop="10dip"
+						 android:paddingRight="30dip"
+						 android:src="@drawable/queue"
+						 android:background="@null"
+						 android:onClick="showQueue">
+			</ImageButton>
+			
+			<ImageButton android:id="@+id/btnHistory"
+						 android:layout_column="2"
+	 					 android:paddingTop="10dip"
+						 android:paddingLeft="30dip"
+						 android:src="@drawable/history"
+						 android:background="@null"
+						 android:onClick="showHistory">
+			</ImageButton>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Queue" 
+					  android:textStyle="bold"
+					  android:layout_column="1"
+					  android:paddingRight="30dip"
+					  android:paddingBottom="20dip"
+					  android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView>
+			<TextView android:text="History" 
+					  android:textStyle="bold"
+					  android:layout_column="1"
+					  android:paddingLeft="30dip"
+					  android:paddingBottom="20dip"
+				      android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView>		
+		</TableRow>
+		
+		<TableRow>
+			<ImageButton android:id="@+id/btnUpload"
+						 android:layout_column="1"
+						 android:paddingTop="10dip"
+						 android:paddingRight="30dip"
+						 android:src="@drawable/upload"
+						 android:background="@null"
+						 android:onClick="showUpload">
+			</ImageButton>
+			
+			<ImageButton android:id="@+id/btnServerInfo"
+						 android:layout_column="2"
+	 					 android:paddingTop="10dip"
+						 android:paddingLeft="30dip"
+						 android:src="@drawable/server_info"
+						 android:background="@null"
+						 android:onClick="showServerInfo">
+			</ImageButton>	
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Upload NZB" 
+					  android:textStyle="bold"
+					  android:layout_column="1"
+					  android:paddingRight="30dip"
+					  android:paddingBottom="20dip"				  
+					  android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView>
+			<TextView android:text="Server Info" 
+					  android:textStyle="bold"
+					  android:layout_column="1"
+					  android:paddingLeft="30dip"
+					  android:paddingBottom="20dip"				  
+				      android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView>		
+		</TableRow>
+		
+		<TableRow>
+			<ImageButton android:id="@+id/btnSettings"
+						 android:layout_column="1"
+						 android:paddingTop="10dip"
+						 android:paddingRight="30dip"
+						 android:src="@drawable/settings"
+						 android:background="@null"
+						 android:onClick="showSettings">
+			</ImageButton>				
+			<!-- <ImageButton android:layout_column="2"
+	 					 android:paddingTop="10dip"
+						 android:paddingLeft="30dip"
+						 android:src="@drawable/settings"
+						 android:background="@null">
+			</ImageButton> -->				
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Settings" 
+					  android:textStyle="bold"		
+					  android:layout_column="1"
+					  android:paddingRight="30dip"
+					  android:paddingBottom="20dip"				  
+					  android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView>
+			<!-- <TextView android:text="Settings" 
+					  android:layout_column="1"
+					  android:paddingLeft="30dip"
+					  android:paddingBottom="20dip"				  
+				      android:layout_gravity="center"
+					  android:id="@+id/textView1" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content">
+			</TextView> -->		
+		</TableRow>	
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="5dip"
+  android:paddingBottom="5dip"
+  android:id="@+id/historyLayout">
+    <TextView 
+    	android:layout_height="wrap_content" 
+    	android:text="Downloaded Warez Title Goes Here And Will Get Truncated" 
+    	android:textSize="15dip"
+    	android:textStyle="bold"
+    	android:layout_width="match_parent" 
+    	android:id="@+id/txtTitle" 
+    	android:layout_alignParentTop="true"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"
+    	android:singleLine="true"
+    	android:ellipsize="marquee"
+    	android:focusableInTouchMode="true"
+    />
+    <TextView
+		android:id="@+id/txtInfo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_below="@+id/txtTitle"
+		android:textSize="13sp"
+    	android:text="Completed Feb 17 2011, 10:17 AM"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"    	
+   	/>     
+    <TextView
+		android:id="@+id/txtSize"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/txtInfo"
+		android:layout_below="@+id/txtTitle"
+		android:gravity="right"
+		android:textSize="13sp"
+    	android:text="773.87 MB"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"    	
+   	/>        	
+</RelativeLayout>

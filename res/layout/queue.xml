@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<LinearLayout
+  		android:id="@+id/queue_header"
+  		android:layout_width="fill_parent"
+  		android:layout_height="55dip"
+  		android:background="@drawable/header"
+  		android:padding="5dip">
+    <ImageButton 
+    	android:id="@+id/btnState" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:src="@drawable/pause"
+    	android:background="@null" 
+    	android:paddingRight="15dip"  
+    	android:onClick="toggleQueue" 	
+   	/>
+   	<TextView
+   		android:id="@+id/txtSpeed"
+		android:layout_height="fill_parent" 
+    	android:layout_width="wrap_content" 
+   		android:layout_toRightOf="@+id/btnState"
+   		android:gravity="center_vertical"
+   		android:text="Speed: 1.75 M/sec"
+   		android:textColor="#ffffffff">
+   	</TextView>
+   	<TextView
+   		android:id="@+id/txtRemaining"
+		android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent" 
+   		android:layout_toRightOf="@+id/txtSpeed"
+   		android:gravity="center_vertical|right"
+   		android:text="3.03 GB left"
+   		android:textColor="#ffffffff">
+   	</TextView>   		
+  	</LinearLayout>  	
+    <ListView android:id="@+id/lvQueue" 
+    		  android:layout_height="match_parent" 
+   			  android:layout_width="match_parent"
+   			  android:layout_below="@id/queue_header">
+    </ListView>
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/empty_queue"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:visibility="gone">
+	    <TextView 
+	    	android:text="There are no items in the queue."  
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent"
+	    	android:gravity="center"
+	    	android:textSize="30dip"
+	    	android:textStyle="bold">
+	   	</TextView>
+	</LinearLayout>    
+</RelativeLayout>

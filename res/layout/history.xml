@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<LinearLayout
+  		android:id="@+id/history_header"
+  		android:layout_width="fill_parent"
+  		android:layout_height="55dip"
+  		android:background="@drawable/header"
+  		android:padding="5dip">
+	    <ImageButton 
+	    	android:id="@+id/btnClearHistory" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" 
+	    	android:src="@drawable/clear"
+	    	android:background="@null" 
+	    	android:paddingRight="15dip"  
+	    	android:onClick="clearHistory" 	
+	   	/>
+	   	<TextView
+			android:layout_height="fill_parent" 
+	    	android:layout_width="wrap_content" 
+	   		android:layout_toRightOf="@+id/btnState"
+	   		android:gravity="center_vertical"
+	   		android:text="Clear History"
+	   		android:textStyle="bold"
+	   		android:textColor="#ffffffff">
+	   	</TextView>  		
+  	</LinearLayout>    
+    <ListView android:id="@+id/lvHistory" 
+    		  android:layout_height="fill_parent" 
+   			  android:layout_width="match_parent"
+   			  android:layout_below="@id/history_header">
+    </ListView>
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/empty_history"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:visibility="gone">
+	    <TextView 
+	    	android:text="There are no downloaded items."  
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent"
+	    	android:gravity="center"
+	    	android:textSize="30dip"
+	    	android:textStyle="bold">
+	   	</TextView>
+	</LinearLayout>     
+</RelativeLayout>

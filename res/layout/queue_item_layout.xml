@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="5dip"
+  android:paddingBottom="5dip">
+    <TextView 
+    	android:layout_height="wrap_content" 
+    	android:text="Title for the warez in progress, will get truncated" 
+    	android:textSize="15dip"
+    	android:textStyle="bold"
+    	android:layout_width="match_parent" 
+    	android:id="@+id/txtTitle" 
+    	android:layout_alignParentTop="true"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"
+    	android:singleLine="true"
+    	android:ellipsize="marquee"
+    	android:focusableInTouchMode="true"
+    />
+    <ProgressBar 
+    	style="?android:attr/progressBarStyleHorizontal"
+    	android:layout_width="match_parent"
+    	android:indeterminateOnly="false"
+    	android:max="100"
+    	android:progress="23" 	
+    	android:id="@+id/pbStatus" 
+    	android:layout_below="@+id/txtTitle"
+    	android:layout_alignParentLeft="true" 
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"    	
+   	/>
+   	<TextView
+   		android:id="@+id/txtETA"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@+id/pbStatus"
+   		android:text="ETA: 00:00:00"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"     		
+   	/>
+   	<TextView
+   		android:id="@+id/txtMBLeft"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@+id/pbStatus"
+   		android:layout_toRightOf="@+id/txtETA"
+   		android:text="878.67 MB left"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"     		
+   	/>
+   	<TextView
+   		android:id="@+id/txtSize"
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@+id/pbStatus"
+   		android:gravity="right"
+   		android:text="1.43 GB"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"     		
+   	/>   	   	
+</RelativeLayout>

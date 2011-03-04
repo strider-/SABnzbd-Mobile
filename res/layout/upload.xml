@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/upload_background">
+    <TextView 
+    	android:id="@+id/lblUrl"
+    	android:padding="5dip"
+    	android:layout_height="wrap_content"  
+    	android:text="Enter the URL of the NZB:" 
+    	android:layout_width="fill_parent" 
+    	android:textStyle="bold"
+    	android:textColor="#ffffffff"
+    	android:layout_alignParentTop="true">
+   	</TextView>
+    <EditText 
+    	android:id="@+id/txtUrl"
+    	android:padding="5dip"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+ 	    android:layout_below="@+id/lblUrl"
+    	android:hint="NZB URL">
+   	</EditText>
+   	
+    <TextView 
+    	android:id="@+id/lblName"
+    	android:paddingTop="20dip"
+    	android:paddingLeft="5dip"
+    	android:paddingRight="5dip"
+    	android:paddingBottom="5dip"
+    	android:layout_height="wrap_content"  
+    	android:text="Queue/folder name:" 
+    	android:layout_below="@+id/txtUrl"
+    	android:textStyle="bold"
+    	android:textColor="#ffffffff"
+    	android:layout_width="fill_parent">
+   	</TextView>
+    <EditText 
+    	android:id="@+id/txtName"
+    	android:padding="5dip"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+ 	    android:layout_below="@+id/lblName"
+    	android:hint="Friendly name">
+   	</EditText>
+    <ImageButton 
+    	android:id="@+id/btnUploadNZB"
+    	android:layout_above="@+id/lblUpload"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/up"
+    	android:layout_width="wrap_content" 
+    	android:onClick="uploadNZB"
+    	android:layout_centerHorizontal="true"    	
+    	android:background="@null">
+   	</ImageButton>
+    <TextView 
+    	android:paddingBottom="20dip"
+    	android:id="@+id/lblUpload"
+    	android:layout_height="wrap_content"  
+    	android:text="Upload"     	
+    	android:textStyle="bold"
+    	android:textColor="#ffffffff"
+    	android:textSize="20dip"
+    	android:gravity="bottom"
+    	android:layout_centerHorizontal="true"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="wrap_content">
+   	</TextView>   	
+</RelativeLayout>

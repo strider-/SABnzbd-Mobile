@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="cx.ath.strider.sabnzbd"
+      android:versionCode="1" android:versionName=".105" android:installLocation="internalOnly">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application android:icon="@drawable/icon" 
+    			 android:label="@string/app_name"
+    			 android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/history_name" android:theme="@android:style/Theme.Light" android:name=".History.History"></activity><activity android:theme="@android:style/Theme.Light" android:label="@string/queue_name" android:name=".Queue.Queue"></activity><activity android:name="ServerInfo" android:label="@string/serverinfo_name" android:theme="@android:style/Theme.Light"></activity><activity android:label="@string/upload_name" android:name="Upload" android:theme="@android:style/Theme.Light"></activity><activity android:name="Preferences" android:theme="@android:style/Theme.Black" android:label="SABnzbd Mobile Options"></activity>
+        
+        
+        
+        
+
+    </application>
+</manifest>

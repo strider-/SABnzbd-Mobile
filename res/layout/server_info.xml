@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<LinearLayout
+  		android:id="@+id/info_header"
+  		android:layout_width="fill_parent"
+  		android:layout_height="55dip"
+  		android:background="@drawable/header"
+  		android:padding="5dip">
+	    <ImageView 
+	    	android:id="@+id/btnClearHistory" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" 
+	    	android:src="@drawable/icon"
+	    	android:background="@null"  
+	   	/>
+	   	<TextView
+	   		android:id="@+id/txtServerVersion"
+			android:layout_height="fill_parent" 
+	    	android:layout_width="wrap_content" 
+	   		android:layout_toRightOf="@+id/btnState"
+	   		android:gravity="center_vertical"
+	   		android:text="SABnzbd v0.0.0"
+	   		android:textStyle="bold"
+	   		android:textSize="20dip"
+	   		android:textColor="#ffffffff">
+	   	</TextView>  		
+  	</LinearLayout>    
+</RelativeLayout>
